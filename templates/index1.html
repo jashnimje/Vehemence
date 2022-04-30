@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vehemence</title>
+    <link rel="stylesheet" href="/static/css/style1.css" />
+  </head>
+  <body>
+    <div class="header">
+      <nav>
+        <div class="logo">
+          <img src="static/images/img2.png" alt="" />
+          <a href="."><span>Vehemence</span></a>
+        </div>
+      </nav>
+
+      <div class="content">
+        {% if param == "default" %}
+        <h1 class="slide-left">Lets Escape the <br />Misery....!</h1>
+        <div class="links slide-left">
+          <a href="./camera" class="btn">Lets Start</a>
+        </div>
+        {% endif %} {% if param != "default" %}
+        <h2>You look {{param.capitalize()}}</h2>
+        <h1>Let's have fun...!</h1>
+        <h2>What would you prefer</h2>
+        <div class="links slide-left">
+          <a href="./movies/{{param}}" class="btn">MOVIES</a>
+          <a href="./songs/{{param}}" class="btn">SONGS</a>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </body>
+</html>

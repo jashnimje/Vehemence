@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies Recommendation</title>
+    <link rel="stylesheet" href="/static/css/style1.css" />
+    <link rel="stylesheet" href="/static/css/recommend.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <nav>
+        <div class="logo">
+          <img src="../static/images/img2.png" alt="" />
+          <a href=".."><span>Vehemence</span></a>
+        </div>
+      </nav>
+      <div class="output">
+        <h2 style="font-family: Bio-Rhyme">
+          Your Emotion is {{param.capitalize()}}
+        </h2>
+        <h2 style="font-family: Bio-Rhyme">
+          Here's Some Movies Recommendation.
+        </h2>
+      </div>
+      <div class="box">
+        <!-- 'angry' -->
+        {% if param=="angry" %}
+        <a href="https://www.imdb.com/title/tt5462602/"
+          ><img src="../static/movies/angry3.png"
+        /></a>
+        <a href="https://www.imdb.com/title/tt0021749/"
+          ><img src="../static/movies/angry18.png"
+        /></a>
+        <a href="https://www.imdb.com/title/tt0039628/"
+          ><img src="../static/movies/angry20.png"
+        /></a>
+        <a href="https://www.imdb.com/title/tt0032904/"
+          ><img src="../static/movies/angry8.png"
+        /></a>
+        <a href="https://www.imdb.com/title/tt0052357/"
+          ><img src="../static/movies/angry9.png"
+        /></a>
+        <a href="https://www.imdb.com/title/tt0047296/"
+          ><img src="../static/movies/angry10.png"
+        /></a>
+        <a href="https://www.imdb.com/title/tt0046250/"
+          ><img src="../static/movies/angry11.png"
+        /></a>
+        <a href="https://www.imdb.com/title/tt0043278/"
+          ><img src="../static/movies/angry13.png"
+        /></a>
+        <a href="https://www.imdb.com/title/tt2402927/"
+          ><img src="../static/movies/angry14.png"
+        /></a>
+        <a href="https://www.imdb.com/title/tt2209418/"
+          ><img src="../static/movies/angry15.png"
+        /></a>
+        <a href="https://www.imdb.com/title/tt0040725/"
+          ><img src="../static/movies/angry16.png"
+        /></a>
+        <a href="https://www.imdb.com/title/tt0043265/"
+          ><img src="../static/movies/angry17.png"
+        /></a>
+
+        {% endif %}
+
+        <!-- 'fear' -->
+        {% if param=="fear" %}
+        <a href="https://www.imdb.com/title/tt0377092/"
+          ><img src="../static/movies/fear1.png"
+        /></a>
+        <a href="https://www.imdb.com/title/tt0147800/"
+          ><img src="../static/movies/fear15.png"
+        /></a>
+        <a href="https://www.imdb.com/title/tt0091790/"
+          ><img src="../static/movies/fear3.png"
+        /></a>
+        <a href="https://www.imdb.com/title/tt0117979/"
+          ><img src="../static/movies/fear4.png"
+        /></a>
+        <a href="https://www.imdb.com/title/tt0120032/"
+          ><img src="../static/movies/fear5.png"
+        /></a>
+        <a href="https://www.imdb.com/title/tt0054698/"
+          ><img src="../static/movies/fear6.png"
+        /></a>
+        <a href="https://www.imdb.com/title/tt0112697/"
+          ><img src="../static/movies/fear7.png"
+        /></a>
+        <a href="https://www.imdb.com/title/tt0247638/"
+          ><img src="../static/movies/fear8.png"
+        /></a>
+        <a href="https://www.imdb.com/title/tt0250494/"
+          ><img src="../static/movies/fear10.png"
+        /></a>
+        <a href="https://www.imdb.com/title/tt0251127/"
+          ><img src="../static/movies/fear11.png"
+        /></a>
+        <a href="https://www.imdb.com/title/tt0302640/"
+          ><img src="../static/movies/fear14.png"
+        /></a>
+        <a href="https://www.imdb.com/title/tt0093565/"
+          ><img src="../static/movies/fear2.png"
+        /></a>
+
+        {% endif %}
+
+        <!-- 'happy' -->
+        {% if param=="happy" or param=="neutral" %}
+        <a href="https://www.imdb.com/title/tt1825683/"
+          ><img src="../static/movies/happy1.png"
+        /></a>
+        <a href="https://www.imdb.com/title/tt1392190/"
+          ><img src="../static/movies/happy2.png"
+        /></a>
+        <a href="https://www.imdb.com/title/tt5013056/"
+          ><img src="../static/movies/happy6.png"
+        /></a>
+        <a href="https://www.imdb.com/title/tt2380307/"
+          ><img src="../static/movies/happy5.png"
+        /></a>
+        <a href="https://www.imdb.com/title/tt3501632/"
+          ><img src="../static/movies/happy20.png"
+        /></a>
+        <a href="https://www.imdb.com/title/tt0029843/"
+          ><img src="../static/movies/happy12.png"
+        /></a>
+        <a href="https://www.imdb.com/title/tt2488496/"
+          ><img src="../static/movies/happy10.png"
+        /></a>
+        <a href="https://www.imdb.com/title/tt3501632/"
+          ><img src="../static/movies/happy13.png"
+        /></a>
+        <a href="https://www.imdb.com/title/tt2380307/"
+          ><img src="../static/movies/happy5.png"
+        /></a>
+        <a href="https://www.imdb.com/title/tt2948356/"
+          ><img src="../static/movies/happy15.png"
+        /></a>
+        <a href="https://www.imdb.com/title/tt0047478/"
+          ><img src="../static/movies/happy16.png"
+        /></a>
+        <a href="https://www.imdb.com/title/tt3606756/"
+          ><img src="../static/movies/happy7.png"
+        /></a>
+
+        {% endif %}
+
+        <!-- 'sad' -->
+        {% if param=="sad" %}
+
+        <a href="https://www.imdb.com/title/tt0038650/"
+          ><img src="../static/movies/sad1.png"
+        /></a>
+        <a href="https://www.imdb.com/title/tt0056592/"
+          ><img src="../static/movies/sad2.png"
+        /></a>
+        <a href="https://www.imdb.com/title/tt0075148/"
+          ><img src="../static/movies/sad4.png"
+        /></a>
+        <a href="https://www.imdb.com/title/tt0078902/"
+          ><img src="../static/movies/sad8.png"
+        /></a>
+        <a href="https://www.imdb.com/title/tt0031679/"
+          ><img src="../static/movies/sad5.png"
+        /></a>
+        <a href="https://www.imdb.com/title/tt0091217/"
+          ><img src="../static/movies/sad13.png"
+        /></a>
+        <a href="https://www.imdb.com/title/tt0050212/"
+          ><img src="../static/movies/sad14.png"
+        /></a>
+        <a href="https://www.imdb.com/title/tt0056241/"
+          ><img src="../static/movies/sad15.png"
+        /></a>
+        <a href="https://www.imdb.com/title/tt0036868/"
+          ><img src="../static/movies/sad11.png"
+        /></a>
+        <a href="https://www.imdb.com/title/tt0120815/"
+          ><img src="../static/movies/sad10.png"
+        /></a>
+        <a href="https://www.imdb.com/title/tt0039628/"
+          ><img src="../static/movies/sad9.png"
+        /></a>
+        <a href="https://www.imdb.com/title/tt0056592/"
+          ><img src="../static/movies/sad2.png"
+        /></a>
+
+        {% endif %}
+
+        <!-- 'neutral' -->
+        {% if param=="neutral" %} {% endif %}
+      </div>
+    </div>
+  </body>
+</html>

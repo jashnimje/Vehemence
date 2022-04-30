@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Songs Recommendation</title>
+    <link rel="stylesheet" href="/static/css/style1.css" />
+    <link rel="stylesheet" href="/static/css/recommend.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <nav>
+        <div class="logo">
+          <img src="../static/images/img2.png" alt="" />
+          <a href=".."><span>Vehemence</span></a>
+        </div>
+      </nav>
+      <div class="output">
+        <h2 style="font-family: Bio-Rhyme">
+          Your Emotion is {{param.capitalize()}}
+        </h2>
+        <h2 style="font-family: Bio-Rhyme">
+          Here's Some Songs Recommendation.
+        </h2>
+      </div>
+      <div class="box">
+        <!-- 'angry' -->
+        {% if param=="angry" %}
+        <a href="https://open.spotify.com/track/0p5n8DVk8mMNJ7LBQIEBFw"
+          ><img src="../static/songs/angry1.png"
+        /></a>
+        <a
+          href="https://open.spotify.com/track/1Y373MqadDRtclJNdnUXVc?autoplay=true"
+          ><img src="../static/songs/angry2.png"
+        /></a>
+        <a href="https://open.spotify.com/track/2VDg6h3Qr3F8UuFVInQxE6"
+          ><img src="../static/songs/angry3.png"
+        /></a>
+        <a href="https://open.spotify.com/track/341VrA2vPpLkvMk257RSVE"
+          ><img src="../static/songs/angry5.png"
+        /></a>
+        <a href="https://open.spotify.com/track/4keAoywVf4jxRvXU7ON0hV"
+          ><img src="../static/songs/angry7.png"
+        /></a>
+        <a
+          href="https://open.spotify.com/track/40rWYHjkAyzpWkRsYXBAMW?autoplay=true"
+          ><img src="../static/songs/angry13.png"
+        /></a>
+        <a
+          href="https://open.spotify.com/track/1Ym7220l4W7Yz7Yt26rWSr?autoplay=true"
+          ><img src="../static/songs/angry14.png"
+        /></a>
+        <a href="https://open.spotify.com/album/2niZGPYtacPSirxbzSkJ1m"
+          ><img src="../static/songs/angry18.png"
+        /></a>
+        <a href="https://open.spotify.com/track/0G8iJkHP368yXlGGpnpJnY"
+          ><img src="../static/songs/angry19.png"
+        /></a>
+        <a
+          href="https://open.spotify.com/track/1Y373MqadDRtclJNdnUXVc?autoplay=true"
+          ><img src="../static/songs/angry2.png"
+        /></a>
+        <a href="https://open.spotify.com/track/2VDg6h3Qr3F8UuFVInQxE6"
+          ><img src="../static/songs/angry3.png"
+        /></a>
+        <a
+          href="https://open.spotify.com/track/40rWYHjkAyzpWkRsYXBAMW?autoplay=true"
+          ><img src="../static/songs/angry13.png"
+        /></a>
+        {% endif %}
+
+        <!-- 'fear' -->
+        {% if param=="fear" %}
+        <a
+          href="https://open.spotify.com/track/20on25jryn53hWghthWWW3?autoplay=true"
+          ><img src="../static/songs/fear1.png"
+        /></a>
+        <a
+          href="https://open.spotify.com/track/3uUuGVFu1V7jTQL60S1r8z?autoplay=true"
+          ><img src="../static/songs/fear2.png"
+        /></a>
+        <a href="https://open.spotify.com/album/278z9UXJaMNDH9Bel9uAxV"
+          ><img src="../static/songs/fear3.png"
+        /></a>
+        <a href="https://open.spotify.com/album/31t9iLimmriRn3Mviqywzw"
+          ><img src="../static/songs/fear14.png"
+        /></a>
+        <a href="https://open.spotify.com/artist/2w9zwq3AktTeYYMuhMjju8"
+          ><img src="../static/songs/fear5.png"
+        /></a>
+        <a href="https://open.spotify.com/album/3udIvIqyBG1RrHxXrUZDoK"
+          ><img src="../static/songs/fear6.png"
+        /></a>
+        <a href="https://open.spotify.com/album/6AVjuEsz5TVQrOoRGIaicN"
+          ><img src="../static/songs/fear13.png"
+        /></a>
+        <a href="https://open.spotify.com/album/4l9wMVL4XAM5jPMXP5RAbL"
+          ><img src="../static/songs/fear8.png"
+        /></a>
+        <a href="https://open.spotify.com/track/3sa06xVNmLLYIxdNNmVQN8"
+          ><img src="../static/songs/fear9.png"
+        /></a>
+        <a href="https://open.spotify.com/album/5itVTi6rI3MlOcWBxROxd9"
+          ><img src="../static/songs/fear10.png"
+        /></a>
+        <a href="https://open.spotify.com/album/35Q09Y0b7ZxOoCdF7sBiGf"
+          ><img src="../static/songs/fear11.png"
+        /></a>
+        <a href="https://open.spotify.com/track/7AVyve7cFYTd51ha5i9kE2"
+          ><img src="../static/songs/fear12.png"
+        /></a>
+        {% endif %}
+
+        <!-- 'happy' -->
+        {% if param=="happy" or param=="neutral" %}
+        <a href="https://open.spotify.com/track/52xJxFP6TqMuO4Yt0eOkMz"
+          ><img src="../static/songs/happy1.png"
+        /></a>
+        <a
+          href="https://open.spotify.com/track/02MWAaffLxlfxAUY7c5dvx?autoplay=true"
+          ><img src="../static/songs/happy2.png"
+        /></a>
+        <a
+          href="https://open.spotify.com/track/3UGIZ8qcrMTwzLbx6Kttqt?autoplay=true"
+          ><img src="../static/songs/happy14.png"
+        /></a>
+        <a
+          href="https://open.spotify.com/track/3LnpBazWpD31QMTn6LgVGv?autoplay=true"
+          ><img src="../static/songs/happy3.png"
+        /></a>
+        <a
+          href="https://open.spotify.com/track/7yZcC4JIdQkXKaigJxrKSn?autoplay=true"
+          ><img src="../static/songs/happy5.png"
+        /></a>
+        <a
+          href="https://open.spotify.com/track/503OTo2dSqe7qk76rgsbep?autoplay=true"
+          ><img src="../static/songs/happy7.png"
+        /></a>
+        <a
+          href="https://open.spotify.com/track/5Z9KJZvQzH6PFmb8SNkxuk?autoplay=true"
+          ><img src="../static/songs/happy8.png"
+        /></a>
+        <a
+          href="https://open.spotify.com/track/1175r6ZmkUjX8dRJLz9Ohk?autoplay=true"
+          ><img src="../static/songs/happy9.png"
+        /></a>
+        <a
+          href="https://open.spotify.com/track/5HKxZt4NmNGpLotbPWm2IW?autoplay=true"
+          ><img src="../static/songs/happy11.png"
+        /></a>
+        <a
+          href="https://open.spotify.com/track/4fouWK6XVHhzl78KzQ1UjL?autoplay=true"
+          ><img src="../static/songs/happy12.png"
+        /></a>
+        <a
+          href="https://open.spotify.com/track/4GcmlWvhVYsb8vTEaq5492?autoplay=true"
+          ><img src="../static/songs/happy13.png"
+        /></a>
+        {% endif %}
+
+        <!-- 'sad' -->
+        {% if param=="sad" %}
+        <a href="https://open.spotify.com/artist/3gacryguGmpmCvgPGt2CBI"
+          ><img src="../static/songs/sad13.png"
+        /></a>
+        <a href="https://open.spotify.com/album/2r1FPqNY8op3T37PYORDVH"
+          ><img src="../static/songs/sad5.png"
+        /></a>
+        <a href="https://open.spotify.com/artist/189I14HgoKkmB02CoEN2po"
+          ><img src="../static/songs/sad2.png"
+        /></a>
+        <a href="https://open.spotify.com/track/1r27r8RJEX2Rq3Kr3Afbhv"
+          ><img src="../static/songs/sad8.png"
+        /></a>
+        <a href="https://open.spotify.com/artist/5wn7ofJrDNHlKovbljawzS"
+          ><img src="../static/songs/sad9.png"
+        /></a>
+        <a href="https://open.spotify.com/album/60Feba9tQ2HPbZvNbNriyu"
+          ><img src="../static/songs/sad11.png"
+        /></a>
+        <a href="https://open.spotify.com/artist/79EcOZxAxp3WBXD8BqTmJN"
+          ><img src="../static/songs/sad14.png"
+        /></a>
+        <a href="https://open.spotify.com/artist/0A218SQBfhfYVBykWGmIVc"
+          ><img src="../static/songs/sad4.png"
+        /></a>
+        <a href="https://open.spotify.com/artist/6MnWA8xVW1sEzV9s7wXpQb"
+          ><img src="../static/songs/sad7.png"
+        /></a>
+        <a href="https://open.spotify.com/artist/5wn7ofJrDNHlKovbljawzS"
+          ><img src="../static/songs/sad9.png"
+        /></a>
+        <a href="https://open.spotify.com/track/25I7nPLlduKUP4iJatuIma"
+          ><img src="../static/songs/sad3.png"
+        /></a>
+        <a href="https://open.spotify.com/playlist/3c6c1zeHnpkfxqeg2hD80E"
+          ><img src="../static/songs/sad12.png"
+        /></a>
+
+        {% endif %}
+      </div>
+    </div>
+  </body>
+</html>
